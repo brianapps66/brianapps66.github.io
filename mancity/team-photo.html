@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <!--<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>-->
+    <link href='https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro|Oswald:400,300' rel='stylesheet' type='text/css'>
+    <link href="../styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/css/styles.css" rel="stylesheet">
+
+</head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="../index.html" class="logo-icon">
+          <img src="../images/logo.png">
+        </a>
+        <ul class="menu">
+          <li><a href="../minecraft.html">Minecraft</a></li>
+          <li><a href="../pokemon.html">Pokemon</a></li>
+          <li><a href="../xbox.html">XBox</a></li>
+          <li><a href="../transfers.html">Transfers</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Man City <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="team-photo.html">Team Photo</a></li>
+              <li><a href="players.php">Players</a></li>
+              <li><a href="games.html">Games</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main_layout">
+      <div class ="container">
+
+
+
+        <div class="image_centre">
+          <h1>Hover over a player's face to see their name</h1>
+
+
+          <SCRIPT LANGUAGE="javascript">
+
+          Image1 = new Image(930, 594)
+          Image1.src = "../images/mancityplayers.jpg"
+
+          Image2 = new Image(930,594)
+          Image2.src = "../images/abcd.jpg"
+
+          Image3 = new Image(930,594)
+          Image3.src = "../images/abcd.jpg"
+
+          function zoomin() {
+            document.emp.src = Image3.src; return true;
+          }
+
+          function zoomout() {
+            document.emp.src = Image2.src; return true;
+          }
+
+          function original() {
+            document.emp.src = Image1.src; return true;
+          }
+
+          </SCRIPT>
+
+
+          <IMG NAME="emp" SRC="../images/mancityplayers.jpg" USEMAP="#ep" class="image5">
+
+          <MAP NAME="ep">
+            <AREA SHAPE="rect" class="face" COORDS="149, 120, 208, 197"  title="Yaya Toure">
+              <AREA SHAPE="rect" class="face" COORDS="256, 125, 317, 200" title="Aleksandar Kolarov">
+                <AREA SHAPE="rect" class="face" COORDS="369, 138, 434, 222" title="Wilfried Bony">
+                  <AREA SHAPE="rect" class="face" COORDS="473, 113, 529, 188" title="Eliaquim Mangala">
+                    <AREA SHAPE="rect" class="face" COORDS="585, 108, 649, 197" title="Joe Hart">
+                      <AREA SHAPE="rect" class="face" COORDS="708, 100, 770, 180" title="Vincent Kompany">
+                        <AREA SHAPE="rect" class="face" COORDS="150, 253, 210, 331" title="Bacary Sagna">
+                          <AREA SHAPE="rect" class="face" COORDS="277, 288, 337, 366" title="Raheem Sterling">
+                            <AREA SHAPE="rect" class="face" COORDS="407, 270, 473, 354" title="David Silva">
+                              <AREA SHAPE="rect" class="face" COORDS="552, 270, 605, 352" title="Samir Nasri">
+                                <AREA SHAPE="rect" class="face" COORDS="663, 239, 725, 316" title="Fernandinho">
+                <AREA SHAPE="default" nohref>
+                </MAP>
+      </div>
+      </div>
+    </div>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
+    <script src="../scripts/app.js"></script>
+    <script>
+  $(function(){
+    $(".face").tooltip({
+               position: {
+                  my: "top+100",
+                  at: "center",
+                  of: $(this),
+                  collision: "none"
+               }
+            });
+  });
+</script>
+  </body>
+</html>

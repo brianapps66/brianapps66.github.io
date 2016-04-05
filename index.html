@@ -1,1 +1,93 @@
-Hello World
+<!doctype html>
+<html>
+  <head>
+    <!--<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>-->
+    <link href='https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro|Oswald:400,300' rel='stylesheet' type='text/css'>
+    <link href="styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/css/styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="index.html" class="logo-icon">
+          <img src="images/logo.png">
+        </a>
+
+        <ul class="menu">
+          <li><a href="minecraft.html">Minecraft</a></li>
+          <li><a href="pokemon.html">Pokemon</a></li>
+          <li><a href="xbox.html">XBox</a></li>
+          <li><a href="transfers.html">Transfers</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Man City <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="mancity/team-photo.html">Team Photo</a></li>
+              <li><a href="mancity/players.php">Players</a></li>
+              <li><a href="mancity/games.html">Games</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider">
+
+      <div class="slide active-slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Welcome to the coolest website on the internet...<br>We hope...</h1>
+              <p>Find out about all of your favourite TV shows, games and sports</p>
+
+
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="images/master-chief.png" class = "master-chief">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide slide-feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="minecraft.html"><img src="images/minecraft-icon.png"></a>
+              <a href="minecraft.html">Minecraft</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Check out some XBox games</h1>
+              <p>If you want to play them you'll need an actual XBox though...</p>
+
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="images/xbox_games.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-nav">
+      <a href="#" class="arrow-prev"><img src="images/arrow-left.png"></a>
+      <ul class="slider-dots">
+        <li class="dot active-dot">&bull;</li>
+        <li class="dot">&bull;</li>
+        <li class="dot">&bull;</li>
+      </ul>
+      <a href="#" class="arrow-next"><img src="images/arrow-right.png"></a>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
