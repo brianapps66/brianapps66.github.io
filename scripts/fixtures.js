@@ -8,7 +8,13 @@ $.ajax({
   var five_games = [];
   if(response.fixtures.length>5){
     var counter = 0;
-    for(var i=0;i<5;i++){
+    for(var i = 0; i <5; i++){
+      five_games[counter] = response.fixtures[i];
+      counter++;
+    }
+  }else{
+    var counter = 0;
+    for(var i = 0; i < response.fixtures.length; i++){
       five_games[counter] = response.fixtures[i];
       counter++;
     }
